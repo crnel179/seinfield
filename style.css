@@ -1,0 +1,47 @@
+/* :: is pseudo-selector, and  
+height: 60px adds a ghost element of 60px which pushes the first block down*/
+body::before{
+    display:block;
+    content:'';
+    height: 60px;
+}
+
+.logo-image{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+/*START OF ABOUT SECTION*/
+.row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.row .col {
+  position: relative;
+  width: 50%;
+}
+.row .col .img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/*END OF ABOUT SECTION*/
+
+/*START OF FOOTER SECTION*/
+#copyright {
+  padding: 8px 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0, 1);
+  position: relative;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background: #333;
+  color: #fff;
+}
+/*END OF FOOTER SECTION*/
